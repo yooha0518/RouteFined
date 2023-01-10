@@ -1,0 +1,643 @@
+body{
+    background-color: #3363ff14;
+}
+#wrap{
+    width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-image:url("../img/img2.png");
+    height: 800px;
+    width: 100%;
+    padding-top: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#explanation{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-left: 150px;
+    padding-right: 200px;
+    font-family: 'Kanit', sans-serif;
+}
+.under_bar{
+    transition: all 0.3s;
+}
+.under_bar:hover{
+    border-bottom: 3px solid #f19300;
+}
+#header{
+    background-color:rgba(255, 255, 255, 0.699);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mouseHere{
+    position: fixed;
+    width: 150px;
+    height: 100px;
+    background-color: #0e8343;
+    border-radius: 50%;
+    top: 200px;
+    left: 20px;
+    animation-name: mouseanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 30px;
+    color:#f19300;
+    z-index: 100;
+}
+#mouseHere::before{
+    content: '';
+    position: fixed;
+    top: 360px;
+    left: 95px;
+    bottom: -5px;
+    margin-left: -5px;
+    border-top: 5px solid #3361ff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    animation-name: mouseanimation_2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+}
+#weather{
+    position:fixed;
+    top: 390px;
+    left: 0;
+    font-size: 50px;
+    color: #3361ff;
+    background-color: #f19300;
+    font-family: 'Neucha', cursive;
+    max-width: 150px;
+    height: 330;
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+    font-weight: 800;
+    overflow: hidden;
+    border: 3px solid #3361ff;
+    border-left: none;
+    z-index: 10;
+}
+#air_pollution{
+    background-color: #3361ff;
+    color: #f19300;
+    width: 300px;
+    height: 390px;
+    position: absolute;
+    top: -500px;
+    left: 0;
+    width: 100%;
+    height: 310;
+    font-size: 50px;
+    font-weight: 800;
+    border-radius: 0 20px 20px 0;
+    font-family: 'Neucha', cursive;
+    padding: 20px;
+    padding-top: 80px;
+}
+#weather:hover #air_pollution{
+    top: 0;
+}
+#logo{
+    margin-top: -130px;
+    aspect-ratio: auto 1 / 1;
+}
+
+#cheak{
+    color:#0e8343;
+}
+
+nav{
+    display: flex;
+    margin-top: 100px;
+}
+nav button{
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    display: inline-block;
+    background-color: #0e8343;
+    height: 100px;
+    width: 20%;
+    font-size: 50px;
+    line-height: 90px;
+    border:1px solid rgb(255, 255, 255);
+    color:#f19300
+}
+nav button:hover{  
+    background-color: rgb(113, 161, 238);
+    font-size: 55px;
+    font-family: 'Kanit', sans-serif;
+}
+#list{
+    display: flex;
+    margin-top: 100px;
+    background-color: rgb(255, 246, 239);
+    border-radius: 20px;
+}
+aside{
+    height: 1000px;
+    width: 40%;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 30px;
+}
+#route{
+    height: 700px;
+}
+footer{
+    height: 270px;
+}
+
+.hidden{
+    display: none;
+}
+.clicked{
+    background-color: rgb(0, 74, 192);
+    box-shadow:0 8px rgb(0, 55, 144);
+}
+.fa-suitcase{
+    position:absolute;
+    top: -10000px;
+}
+
+#firstCity{
+    border-radius: 20px 0 0 20px;
+    font-family: 'Dosis', sans-serif;
+}   
+#secondCity{
+    font-family: 'Dosis', sans-serif;
+}
+#thirdCity{
+    font-family: 'Dosis', sans-serif;
+}
+#fourthCity{
+    font-family: 'Dosis', sans-serif;
+}
+#fifthCity{
+    border-radius: 0 20px 20px 0;
+    font-family: 'Dosis', sans-serif;
+}
+.city_content_wrap{
+    position:relative;
+    margin-top: 35px;
+    width: 100%;
+    min-height: 350px;  
+    border-radius: 20px;
+}
+.city_content_wrap:hover{
+    background-color: #c6d4ff;
+}
+.wrapClicked{
+    background-color: #f2f5ff;
+    box-shadow: 0 5px 10px #707070 inset;
+    /* 오버플로우 히든으로 밖에 위치했다가 클릭했을때 아래로 내려서 불러오는 방식으로 구현*/
+}
+.Kategorie{
+    position:absolute;
+    top: 10px;
+    left: 220px;
+    font-size: 25px;
+    color: rgb(114, 0, 50);
+}
+.grade{
+    position: absolute; 
+    top: 10px;
+    left: 400px;
+    font-size: 25px;
+    color: rgb(212, 106, 0);
+}
+.cityimage{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cityimg{
+    position: absolute;
+    left: -30px;
+}
+.content{
+    position:absolute;
+    top: 120px;
+    left: 220px;
+    font-size: 25px;
+    float: left;
+}
+.name{
+    position:absolute;
+    top: 60px;
+    left: 220px;
+    font-size: 30px;
+}
+#city1{
+    overflow: auto;
+    max-height: 900px;
+}
+#city2{
+    overflow: auto;
+    max-height: 900px;
+}
+#city3{
+    overflow: auto;
+    max-height: 900px;
+}
+#city4{
+    overflow: auto;
+    max-height: 900px;
+}
+#city5{
+    overflow: auto;
+    max-height: 900px;
+}
+#city1Food{
+    overflow: auto;
+    max-height: 900px;
+}
+#city2Food{
+    overflow: auto;
+    max-height: 900px;
+}
+#city3Food{
+    overflow: auto;
+    max-height: 900px;
+}
+#city4Food{
+    overflow: auto;
+    max-height: 900px;
+}
+#city5Food{
+    overflow: auto;
+    max-height: 900px;
+}
+#routeBtn{
+    width: 80%;
+    height: 100px;
+    background-color: #7494fc;
+    border-radius: 20px;
+    margin-top: 130px;
+    font-size: 70px;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 10px #3361ff;
+    border:none;
+    transition: all 0.3s; 
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    margin-left: 10%;
+    margin-bottom: 100px;
+}
+#routeBtn:hover{
+    background-color: #8da7ff;
+}
+#routeBtn:active{
+    box-shadow: none;
+    transform: translateY(7px);
+}
+
+#route{
+    margin-top: 100px;
+}
+#route_map{
+    width: 600px;
+    height: 600px;
+    border: solid 1px #000 ;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+footer{
+    
+}
+@media(max-width:1280px){
+    .city_content_wrap{
+        height: 400px;
+        padding-top: 20px;
+    }
+    
+    .content{
+        top:260px;
+        left:10px;
+        font-size: 30px;
+    }
+    .name{
+        top: 80px;
+        left: 220px;
+        font-size: 50px;
+    }
+    .Kategorie{
+        top: 30px;
+        left: 220px;
+        font-size: 33px;
+    }
+    .grade{
+        top: 30px;
+        left: 420px;
+        font-size: 30px;
+    }
+    .cityimage{
+        top: 20px;
+        left: 20px;
+    }
+    #logo{
+        margin-left: 140px;
+    }
+    #weather{
+        min-width: 500px;
+        max-height: 20px;
+        left: 0px;
+        top: 0;
+        border-radius: 0 0 20px 20px ;
+        border:solid #3361ff 3px;
+        text-align: center;
+        padding: 30px;
+        padding-top: 0;
+        font-size: 30px;
+    }
+    #air_pollution{
+        min-width: 500px;
+        max-height: 40px;
+        text-align: center;
+        padding-top:6px;
+        font-size: 30px;
+        border-radius: 0 0 20px 20px ;
+    }
+    #mouseHere{
+        display: none;
+    }
+    #list{
+        height: 900px;
+    }
+    
+    #city1{
+        height: 80%;
+    }
+    #city2{
+        height: 80%;
+    }
+    #city3{
+        height: 80%;;
+    }
+    #city4{
+        height: 80%;;
+    }
+    #city5{
+        height: 80%;;
+    }
+    #city1Food{
+        height: 80%;;
+    }
+    #city2Food{
+        height: 80%;;
+    }
+    #city3Food{
+        height: 80%;;
+    }
+    #city4Food{
+        height: 80%;
+    }
+    #city5Food{
+        height: 80%;
+    }
+}
+@media(max-width:1150px){
+    #weather {
+        min-width: 700px;
+        max-height: 30px;
+        font-size: 40px;
+    }
+    #air_pollution {
+        min-width: 500px;
+        font-size: 40px;
+    }
+}
+
+@media(max-width:830px){
+    #wrap{
+        width: 100%;
+    }
+    #logo{
+        height: 150px;
+    }
+    #explanation{
+        margin-left:0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    header{
+        height: 1100px;
+        padding-top: 360px;
+        width: 100%;
+    }
+    #header{
+        height:750px;
+        width: 100%;
+    }
+    aside{
+        width:49%; 
+    }
+    .name{
+        font-size: 30px;
+        margin-left: 9px;
+    }
+    .Kategorie{
+        top: 45px;
+        font-size: 25px;
+        margin-left: 6px;
+    }
+    .grade {
+    top: 20px;
+    left: 225px;
+    font-size: 20px;
+    }
+    .content {
+        top: 230px;
+        left: 10px;
+        font-size: 24px;
+    }
+    #city5Food{
+        height: 800px;
+    }
+}
+@media(max-width:540px){
+    #logo{
+        height: 100px;
+        margin-left: 80px;
+    }
+    #weather{
+        min-width: 450px;
+        padding: 20px;
+        font-size: 26px;
+        padding-top: 0;
+    }
+    #air_pollution{
+        padding: 20px;
+        font-size: 26px;
+        padding-top: 20px;
+        min-width: 350px;
+        max-height: 90px;
+        border-radius: none;
+    }
+    #explanation {
+        font-size: 40px;
+    }
+    header{
+        padding-top: 250px;
+        height: 600px;
+    }
+    #header {
+        height: 410px;
+    }
+    nav button{
+        font-size: 30px;
+        height: 60px;
+        line-height: 50px;
+    }
+    nav button:hover {
+        font-size: 34px;
+    }
+    #air_pollution{
+        margin-top: -5px;
+    }
+    .city_content_wrap {
+        margin-top: 10px;
+    }
+    .city_content_wrap {
+        height: 600px;
+    }
+    .Kategorie {
+        top: 230px;
+        left: 0;
+    }
+    .name {
+        top: 270px;
+        left: 0;
+    }
+    .content {
+        top: 370px;
+    }
+    .grade {
+        top: 235px;
+        left: 160px;
+    }
+}
+@media(max-width:420px){
+    #logo {
+        height: 70px;
+        margin-left: 60px;
+    }
+    #explanation {
+        margin-left: 0;
+        padding-left: 0px;
+        padding-right: 10px;
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    #weather {
+        min-width: 350px;
+        max-height: 60px;
+    }
+    header{
+        background-position-x: center;
+    }
+    nav button{
+        font-size: 23px;
+    }
+    nav button:hover{
+        font-size: 28px;
+    }
+    #list{
+        flex-direction: column;
+    }
+    aside {
+        width: 90%;
+    }
+    .Kategorie {
+        top: 40px;
+        left: 220px;
+    }
+    .grade {
+        top: 80px;
+        left: 230px;
+        font-size: 24px;
+    }
+    #list {
+        height: 1800px;
+    }
+    #routeBtn {
+        font-size: 40px;
+        color: #fff;
+    }
+    #route_map {
+        width: 90%;
+        height: 400px;
+        margin-left: 20px;
+    }
+    #routeBtn {
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    #city1 {
+        height: 95%;
+    }
+    #city2 {
+        height: 95%;
+    }
+    #city3 {
+        height: 95%;
+    }
+    #city4 {
+        height: 95%;
+    }
+    #city5 {
+        height: 95%;
+    }
+    #air_pollution {
+        padding: 0px;
+        padding-top: 20px;
+        font-size: 35px;
+        min-width: 390px;
+    }
+}
+@media(max-width:380px){
+    #weather {
+        font-size: 25px;
+        min-width: 310px;
+    }
+    #air_pollution{
+        font-size: 30px;
+        min-width: 310px;
+    }
+    .grade {
+        top: 245px;
+        left: 250px;
+    }
+    .Kategorie {
+        top: 242px;
+        left: 0px;
+    }
+}
+@keyframes mouseanimation{
+    0%   {top: 230px}
+    50%   {top: 200px}
+    100%   {top: 230px}
+}
+@keyframes mouseanimation_2{
+    0%   {top: 360px}
+    50%   {top: 330px}
+    100%   {top: 360px}
+}

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Fined</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header">
+                <img id="logo" src="img/logo.png" alt="logo1">
+                <div id="explanation">
+                    <ul>
+                        <span id="cheak">✔</span > <span class=under_bar>You can see the attractions of Fukuoka <br/></span> 
+                    </ul> 
+                    <ul>
+                        <span id="cheak">✔</span ><span class=under_bar>Choose the location you want and find out the route and cost</span> 
+                    </ul>
+                    <div id="mouseHere">mouse here</div>
+                    <div id="weather">
+                        <span class="weather"></span>
+                        <span class="weather"></span>
+                        <div id="air_pollution">
+                            <a>Fukuoka Current AQI is</a>
+                            <a class="aqi"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <button id="firstCity" class="clicked">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase fa-suitcase_clicked"></i>
+                </div>
+                Sawara
+            </button>
+            <button id="secondCity">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase"></i>
+                </div>
+                Chuo
+            </button>    
+            <button id="thirdCity">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase"></i>
+                </div>
+                Hakata 
+            </button>
+            <button id="fourthCity">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase"></i>
+                </div>
+                Nishi</button>
+                <button id="fifthCity">
+                    <div class="">
+                        <i class=" fa-solid fa-suitcase"></i>
+                    </div>
+                    Higash
+                </button>
+            </nav>
+            <div id="list">
+                <aside>
+                    <div id="city1">
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Momochi_Seaside_Park.jpeg" alt="Momochi Seaside Park" style="max-height: 100%;"></div>
+                            <span class="Kategorie"> (Park) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
+                            <span class="name">Momochi Seaside Park</span>
+                            <span class="content">an artificial beach that stretches along an artificial island.
+                                <br/>Pet is possible
+                                <br/>Wheelchair is possible
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Tower.jpeg" alt="Fukuoka Tower" style="max-height: 100%;"></div>
+                            <span class="Kategorie"> (Land mark) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                            <span class="name">Fukuoka Tower</span>
+                            <span class="content">skyscrapers and beautiful observatory.
+                                JP¥800 (Official Site)
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Fukuoka_city_Museum.jpeg" alt="Fukuoka city Museum" style="left: -50px;max-height: 100%;"></div>
+                            <span class="Kategorie"> (Museum) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                            <span class="name">Fukuoka city Museum</span>
+                            <span class="content">A modern museum where you can see Fukuoka's history exhibition.
+                                JP¥200 (Official Site)
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Karanno_Falls.jpeg" alt="Karanno Falls" style="top: -300px;left: -100px;"></div>
+                            <span class="Kategorie"> (Natural) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="name">Karanno Falls</span>
+                            <span class="content">a waterfall with a beautiful scenery.
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Bozugataki_Falls.jpeg" alt="Bozugataki Falls" style="max-height: 100%;left: -50px;"></div>
+                            <span class="Kategorie"> (Natural) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                            <span class="name">Bozugataki Falls</span>
+                            <span class="content">a waterfall with a beautiful scenery.
+                            </span>
+                        </button>
+                    </div>
+                    <div id="city2" class="hidden">
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Open_Top_Bus .jpeg" alt="Fukuoka Open Top Bus" style="top:-60px;left:-100px"></div>
+                            <span class="Kategorie"> (experience) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                            <span class="name">Fukuoka Open Top Bus</span>
+                            <span class="content">You can enjoy sightseeing spots in Fukuoka city.
+                                The ticket office is located in Fukuoka City Hall
+                            </span>
+                        </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Daimaru_Fukuoka_Tenjin.jpeg" alt="Daimaru Fukuoka Tenjin" style="left:-130px;top:-80px"></div>
+                        <span class="Kategorie"> (Shopping) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">Daimaru Fukuoka Tenjin</span>
+                        <span class="content"></span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Shofuen.jpeg" alt="Shofuen" style="max-height: 100%;left:-50px;"></div>
+                        <span class="Kategorie"> (Land mark) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">Shofuen</span>
+                        <span class="content">Beautiful Architecture in Japan.
+                            I recommend blooming April and November of autumn leaves.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Castle_Ruins.jpeg" alt="Fukuoka Castle Ruins" style="left: -60px;top:-100px;"></div>
+                        <span class="Kategorie"> (Historic Site) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
+                        <span class="name">Fukuoka Castle Ruins</span>
+                        <span class="content">It is the historic castle ruins of the 1600s.
+                            You can see the city view and part of remained city walls.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Art_Museum.jpeg" alt="Fukuoka Art Museum" style="top:-40px;max-width: 100%;left:0px"></div>
+                        <span class="Kategorie"> (Museum) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">Fukuoka Art Museum</span>
+                        <span class="content">You can see various exhibits of Asia and other parts of the world.<br/>(Mondays, Holidays Off)
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/ohori_park.jpeg" alt="Ohori Park" style="max-height: 100%;left: -46px;"></div>
+                        <span class="Kategorie"> (Park) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">Ohori Park</span>
+                        <span class="content">It is a city park with a large lake, a lake sports course, boat rental, and coffee shop.
+                        </span>
+                    </button>
+                </div>
+                <div id="city3" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Canal_City_Hakata.jpeg" alt="Canel City Hakata" style="max-height: 100%;"></div>
+                        <span class="Kategorie"> (Land Mark) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">Canal City Hakata</span>
+                        <span class="content">A large shopping mall.
+                            · Fountain Show
+                            11:30/12:15/12:45/13:30/14:30/15:30/17:30
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Rakusuien.jpeg" alt="Rakusuien" style="max-height: 100%;"></div>
+                        <span class="Kategorie"> (Land Mark) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">Rakusuien</span>
+                        <span class="content">It is a small Japanese-style garden in the center of Fukuoka with traditional tea houses, ponds, and trails.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Asahi_Brewery_Hakata.jpeg" alt="Asahi Brewery Hakata" style="max-height: 100%;left:-35px"></div>
+                        <span class="Kategorie"> (experience) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.5</span>
+                        <span class="name">Asahi Brewery Hakata</span>
+                        <span class="content">A beer factory with free tasting and sightseeing.
+                            Reservations are required on the website because you cannot register on the same day.
+                            09:30 – 15:00
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Kushida_Jinja.jpeg" altKushida Jinja style="max-height: 100%;left: -50px;"></div>
+                        <span class="Kategorie"> (Holy Land) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">Kushida Jinja</span>
+                        <span class="content">Built in 757 AD. 
+                            Hakata Gion Yamakasa, the region's largest festival, is held every year.
+                            Yamakasa : July
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Hakata_Traditional_Craft_and_Design_Museum.jpeg" alt="Hakata Traditional Craft and Design Museum" style="max-height: 100%;"></div>
+                        <span class="Kategorie"> (Museum) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">Hakata Traditional Craft and Design Museum
+                        </span>
+                        <span class="content" style="margin-top: 24px;">You can see traditional Fukuoka artifacts, including textiles and dolls, and sometimes workshops are held.
+
+                            Free
+                            </span>
+                    </button>
+                </div>
+                <div id="city4" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Nokonoshima_Island.jpeg" alt="Nokonoshima Island" style="max-height: 100%;left:-50px"></div>
+                        <span class="Kategorie"> (Natural) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name"style="font-size:25px">Nokonoshima Island</span>
+                        <span class="content" >A well-groomed island.
+
+                            Recommended use of Fukuoka City Pass</span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Mariano_City_Fukuoka.jpeg" alt="Mariano City Fukuoka" style="max-width: 140%;left:-10;top:-110px;"></div>
+                        <span class="Kategorie"> (Natural) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">Genkai Island</span>
+                        <span class="content">A good island for a walk.</span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Genkai_Island.jpeg" alt="Genkai Island" style="max-height: 100%;left:0"></div>
+                        <span class="Kategorie"> (Shopping) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">Marinoa City Fukuoka</span>
+                        <span class="content">There are outlet stores and casual restaurants. 
+                            A large shopping complex where you can enjoy a variety of activities.
+                            
+                            10:00 – 20:00
+                            </span>
+                    </button>
+                </div>
+                <div id="city5" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Katsuma_Beach.jpeg" alt="Katsuma Beach" style="max-height: 100%;left:-130px"></div>
+                        <span class="Kategorie"> (Natural) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">Katsuma Beach</span>
+                        <span class="content">Open 24 hours a day.</span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Shika_Island.jpeg" alt="Shika Island" style="max-width: 100%;left:0"></div>
+                        <span class="Kategorie"> (Park) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">Shika Island Park</span>
+                        <span class="content">It's good to drive along the ocean.</span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Marine_World_Uminonakamichi.png" alt="Marine World" style="max-height: 100%;left: 0;"></div>
+                        <span class="Kategorie"> (Aquarium) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">Marine World</span>
+                        <span class="content">A city aquarium where you can see a variety of marine life. There's a dolphin and sea lion show.
+
+                            Fee ￥2,500
+                            10:00 – 17:00
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Hakozaki_Shrine.png" alt="Hakozaki Shrine" style="max-height: 100%;"></div>
+                        <span class="Kategorie"> (Historic Site) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">Hakozaki Shrine</span>
+                        <span class="content">A historic shrine with representative relics and traditional events.
+                            In September, Hojoya, one of the three major Hakata festivals, will be held.
+                            
+                            06:00– 19:00
+                            </span>
+                    </button>
+                </div>
+            </aside>
+            <aside>
+                <div id="city1Food" >
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/THE_BEACH.png" alt="THE_BEACH" style="height: 100%;position: absolute;left:-50px;"></div>
+                        <span class="Kategorie"> (Cafe) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
+                        <span class="name">THE BEACH</span>
+                        <span class="content">Weekday 10:30 – 18:00 
+                            (Wednesdays Off)
+                            Weekend 11:00 – 19:00
+                            092-845-6636
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img src="img/Genkotsu1.png" alt="Genkotsu"style="height: 100%;position: absolute;left:-50px;"></div>
+                            <span class="Kategorie"> (Ramen) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 3.6</span>
+                            <span class="name">Genkotsu</span>
+                            <span class="content">11:00 – 22:00
+                                092-874-1396
+                                </span>
+                        </button>
+                    </div>
+                <div id="city2Food" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Abura_Soba_Nanairo.png" alt="Abura_Soba_Nanairo" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Ramen) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">Abura Soba Nanairo</span>
+                        <span class="content">11:45 – 20:45
+                            (Braketime 13:46-17:00, 
+                            Sundays Off)
+                            092-781-7311
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Ippudo_Daimyo_Branch.png" alt="Ippudo_Daimyo_Branch" style="height: 100%;position: absolute;left: -30px;"></div>
+                        <span class="Kategorie"> (Ramen) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">Ippudo Daimyo Branch</span>
+                        <span class="content">The original Shiromaru Motoaji Ramen and Akamaru Shin-Aji Ramen, which adds a spicy smile and deep taste, is popular.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Kiwamiya_Fukuoka_Parco_Store2.png" alt="Kiwamiya_Fukuoka_Parco_Store"style="height: 100%;position: absolute;left: -70px;"></div>
+                        <span class="Kategorie"> (Meat Dish) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">Kiwamiya Fukuoka Parco Store</span>
+                        <span class="content">Rice, salad, soybean paste soup, and ice cream are served as a set.
+                            A system where meat is removed little by little and grilled on a heated stone.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Chikae_Fukuoka.png" alt="Chikae_Fukuoka" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Seafood) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">Chikae Fukuoka</span>
+                        <span class="content">weekday17:00 – 21:00
+                            weekend11:30 – 21:00 
+                                (Breaktime 14:00-17:00)
+                            Fresh sashimi straightened out of several large tanks.
+                            There is a weekend lunch limited menu.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Robata_Sankobashi.png" alt="Robata_Sankobashi" style="width: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Seafood) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.6</span>
+                        <span class="name">Robata Sankobashi</span>
+                        <span class="content">weekday17:00 – 21:00
+                            17:00 – 00:30
+                            092-712-7373
+                            Robadayaki Restaurant.
+                            It's always better to make a reservation because there are no seats available.                            
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Makoto.png" alt="Makoto" style="width: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Teishoku) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">Makoto</span>
+                        <span class="content">Weekday 11:00 – 22:00
+                            (Breaktime 13:30-18:00)
+                         weekend 11:00 – 01:30
+                            (Sundays Off)
+                        092-712-0201
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Gyukatsu_Motomura.png" alt="Gyukatsu_Motomura" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Meat Dish ) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.7</span>
+                        <span class="name">Gyukatsu Motomura</span>
+                        <span class="content">11:00 - 22:00
+                            You can grill it on a heated stone plate as you like.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Tempura_Hirao.png" alt="Tempura_Hirao" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Ramen) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">Tempura Hirao</span>
+                        <span class="content">10:30 – 19:30 (Tuesdays Off)
+                            092-752-7900
+                            a cost-effective fried food restaurant.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Genso_Hakata_Mentaiju.png" alt="Genso_Hakata_Mentaiju" style="width: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Japanese) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">Genso Hakata Mentaiju</span>
+                        <span class="content">07:00 – 22:30
+                            092-725-7220
+                            Salted pollack roe and tsukemen restaurant that many locals visit.
+                            </span>
+                    </button>
+                </div>
+                <div id="city3Food" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Yayoiken.png" alt="Yayoiken" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Teishoku) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.7</span>
+                        <span class="name">Yayoiken</span>
+                        <span class="content">10:00 – 02:30
+                            092-263-8805
+                            Available as formal or single item
+                            There is no separate Korean menu.                            
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Izakaya_Sea_Food.png" alt="Izakaya_Sea_Food" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Izakaya) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.8</span>
+                        <span class="name">Izakaya SeaFood</span>
+                        <span class="content">17:00 – 00:00
+                            092-433-4210
+                            cost-effective restaurant of 500 yen sashimi.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Ichiran.png" alt="Ichiran" style="height: 100%;position: absolute;left: -30px;"></div>
+                        <span class="Kategorie"> (Ramen) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">Ichiran</span>
+                        <span class="content">Its characteristic is that you can choose ingredients such as taste, oiliness, garlic, green onion, char siu, sauce, and noodles according to your taste.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Oyama.png" alt="Oyama" style="height: 100%;position: absolute;left: -30px;"></div>
+                        <span class="Kategorie"> (Offal pot) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">Oyama</span>
+                        <span class="content">16:00 – 23:00
+                            092-2626-8136
+                            It's savory and has a strong.
+                            You can also order one serving.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Torimabushi.png" alt="Torimabushi" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Izakaya) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">Torimabushi</span>
+                        <span class="content">10:30 – 22:00
+                            092-260-7273
+                            a classic restaurant featuring local specialties and sake.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Mishima.png" alt="Mishima" style="width: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Teishoku) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">Mishima</span>
+                        <span class="content">11:30 – 22:00 
+                            (Breaktime 14:00-17:00, Weekend Off)
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Tetpangaya.png" alt="Tetpangaya" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Okonomiyaki) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">Tetpangaya</span>
+                        <span class="content">11:30 – 22:30
+                            (Breaktime 14:00-18:00, 
+                            Sundays Off)
+                            A popular local restaurant.
+                            One drink per person.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Nikuichi.png" alt="Nikuichi" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Yakiniku) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">Nikuichi</span>
+                        <span class="content">16:00 – 00:00
+                            092-472-1129
+                            A restaurant with charcoal-grilled beef and unlimited options for liquor.
+                            </span>
+                    </button>
+                </div>
+                <div id="city4Food" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Pomunoki_Marinoashitifukuokaten.png" alt="Pomunoki_Marinoashitifukuokaten" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Western) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">Pomunoki</span>
+                        <span class="content">11:00 – 21:00
+                            092-892-8645
+                            A place where you can eat various omurice.
+                            </span>
+                    </button>
+                </div>
+                <div id="city5Food" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/moku.png" alt="杢moku" style="height: 100%;position: absolute;left: -30px;"></div>
+                        <span class="Kategorie"> (Italian) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
+                        <span class="name">杢moku</span>
+                        <span class="content">renovation of the old town.
+                            Located in Hakozaki Shopping Street
+                            TEL : 09-3611-9506
+                            11:30 – 22:00
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Ginger_Bakeshop.png" alt="Ginger_Bakeshop" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Dessert) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">Ginger Bakeshop</span>
+                        <span class="content">American style cake and cookies.
+                            Renovation of old building space.
+                            TEL : 092-775-8235
+                            12:00 – 19:00
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Nagata_Bakery_Hakozaki.png" alt="Nagata_Bakery_Hakozaki" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (Bakery) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">Nagata Bakery Hakozaki</span>
+                        <span class="content">a bakery famous for condensed milk bread
+                            08:00 – 19:00 
+                            (Tuesdays and Thursdays Off)
+                            092-643-8680
+                            </span>
+                    </button>
+                </div>
+            </aside>
+        </div>
+        <button id="routeBtn">Route Search</button>
+        <div id="route" class="hidden">
+            <div id="route_map">
+
+            </div>
+        </div>
+        <footer></footer>
+    </div>   
+    <script src="main.js"></script>
+    <script src="weather.js"></script>
+    <script src="https://kit.fontawesome.com/f4a340c9f0.js" crossorigin="anonymous"></script>
+</body>
+</html>
