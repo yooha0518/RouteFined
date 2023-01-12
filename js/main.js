@@ -16,10 +16,13 @@ const fifthCityFoodContent = document.getElementById("city5Food");
 const cityContentWrap = document.querySelectorAll(".city_content_wrap");
 const clickedCityName = document.querySelector("#clicked_city_name");// 클릭한 도시 이름을 여기에다가 innerHtml 한다.
 
+
+
 let clickedCity;
 
 const routeBtn = document.getElementById("routeBtn");
-const route = document.getElementById("route");
+const route = document.getElementById("mapBody");
+const route2 = document.getElementById("mapBody2");
 
 function clickCity1(){
     firstCityContent.classList.remove("hidden");
@@ -32,8 +35,7 @@ function clickCity1(){
     thirdCityFoodContent.classList.add("hidden");
     fourthCityFoodContent.classList.add("hidden");
     fifthCityFoodContent.classList.add("hidden");
-    clickedCity=this.innerText;
-    clickedCityName.innerText = clickedCity;
+    
 }
 
 function clicked1(){
@@ -56,8 +58,6 @@ function clickCity2(){
     thirdCityFoodContent.classList.add("hidden");
     fourthCityFoodContent.classList.add("hidden");
     fifthCityFoodContent.classList.add("hidden");
-    clickedCity=this.innerText;
-    clickedCityName.innerText = clickedCity;
 }
 
 function clicked2(){
@@ -79,8 +79,7 @@ function clickCity3(){
     thirdCityFoodContent.classList.remove("hidden");
     fourthCityFoodContent.classList.add("hidden");
     fifthCityFoodContent.classList.add("hidden");
-    clickedCity=this.innerText;
-    clickedCityName.innerText = clickedCity;
+    
 }
 
 function clicked3(){
@@ -102,8 +101,7 @@ function clickCity4(){
     thirdCityFoodContent.classList.add("hidden");
     fourthCityFoodContent.classList.remove("hidden");
     fifthCityFoodContent.classList.add("hidden");
-    clickedCity=this.innerText;
-    clickedCityName.innerText = clickedCity;
+    
 }
 
 function clicked4(){
@@ -125,8 +123,7 @@ function clickCity5(){
     thirdCityFoodContent.classList.add("hidden");
     fourthCityFoodContent.classList.add("hidden");
     fifthCityFoodContent.classList.remove("hidden");
-    clickedCity=this.innerText;
-    clickedCityName.innerText = clickedCity;
+    
 }
 function clicked5(){
     firstCity.classList.remove("clicked"); 
@@ -142,6 +139,10 @@ function wrapClick(){
 
 function routeBtnClick(){
     route.classList.remove("hidden");
+    
+}
+function routeBtnClick2(){
+    route2.classList.remove("hidden");
 }
 
 function firstNavBtnClick(){
@@ -188,4 +189,6 @@ fifthCity.addEventListener("click",clickCity5);
 fifthCity.addEventListener("click",clicked5);
 cityContentWrap.forEach((array) => array.addEventListener("click", wrapClick));
 routeBtn.addEventListener("click",routeBtnClick);
+routeBtn.addEventListener("click",routeBtnClick2);
+
 

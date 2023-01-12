@@ -10,10 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Jua&family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 
 
+    
 </head>
 <body>
+    <a href="korean.html" id="transrationBtn">한국어</a>
     <div id="wrap">
         <header>
             <div id="header">
@@ -71,7 +76,7 @@
             <div id="list">
                 <aside>
                     <div id="city1">
-                        <button class="city_content_wrap">
+                        <button class="city_content_wrap" id="Momochi_Seaside_Park" data-lat="33.594602758785136" data-lng="130.35131717655528">
                             <div class="cityimage"><img class="cityimg" src="img/Momochi_Seaside_Park.jpeg" alt="Momochi Seaside Park" style="max-height: 100%;"></div>
                             <span class="Kategorie"> (Park) </span>
                             <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
@@ -81,7 +86,7 @@
                                 <br/>Wheelchair is possible
                             </span>
                         </button>
-                        <button class="city_content_wrap">
+                        <button class="city_content_wrap" id="Fukuoka_Tower" data-lat="33.59340969823782" data-lng="130.3514563531914">
                             <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Tower.jpeg" alt="Fukuoka Tower" style="max-height: 100%;"></div>
                             <span class="Kategorie"> (Land mark) </span>
                             <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
@@ -90,7 +95,7 @@
                                 JP¥800 (Official Site)
                             </span>
                         </button>
-                        <button class="city_content_wrap">
+                        <button class="city_content_wrap" id="Fukuoka_city_Museum" data-lat="33.58993791527087" data-lng="130.35306399736902">
                             <div class="cityimage"><img class="cityimg" src="img/Fukuoka_city_Museum.jpeg" alt="Fukuoka city Museum" style="left: -50px;max-height: 100%;"></div>
                             <span class="Kategorie"> (Museum) </span>
                             <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
@@ -99,7 +104,7 @@
                                 JP¥200 (Official Site)
                             </span>
                         </button>
-                        <button class="city_content_wrap">
+                        <button class="city_content_wrap" id="Karanno_Falls" data-lat="33.4931694618577" data-lng="130.30470599300284">
                             <div class="cityimage"><img class="cityimg" src="img/Karanno_Falls.jpeg" alt="Karanno Falls" style="top: -300px;left: -100px;"></div>
                             <span class="Kategorie"> (Natural) </span>
                             <span class="grade"><i class="fa-solid fa-star"></i> 4.9</span>
@@ -107,7 +112,7 @@
                             <span class="content">a waterfall with a beautiful scenery.
                             </span>
                         </button>
-                        <button class="city_content_wrap">
+                        <button class="city_content_wrap" id="Bozugataki_Falls" data-lat="33.47639449246851" data-lng="130.3212697150263">
                             <div class="cityimage"><img class="cityimg" src="img/Bozugataki_Falls.jpeg" alt="Bozugataki Falls" style="max-height: 100%;left: -50px;"></div>
                             <span class="Kategorie"> (Natural) </span>
                             <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
@@ -117,8 +122,8 @@
                         </button>
                     </div>
                     <div id="city2" class="hidden">
-                        <button class="city_content_wrap">
-                            <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Open_Top_Bus .jpeg" alt="Fukuoka Open Top Bus" style="top:-60px;left:-100px"></div>
+                        <button class="city_content_wrap" id="Fukuoka_Open_Top_Bus" data-lat="33.59108796418713" data-lng="130.40166182883155">
+                            <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Open_Top_Bus.jpeg" alt="Fukuoka Open Top Bus" style="top:-60px;left:-100px"></div>
                             <span class="Kategorie"> (experience) </span>
                             <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
                             <span class="name">Fukuoka Open Top Bus</span>
@@ -126,14 +131,14 @@
                                 The ticket office is located in Fukuoka City Hall
                             </span>
                         </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Daimaru_Fukuoka_Tenjin" data-lat="33.58920061489103" data-lng="130.40151612264768">
                         <div class="cityimage"><img class="cityimg" src="img/Daimaru_Fukuoka_Tenjin.jpeg" alt="Daimaru Fukuoka Tenjin" style="left:-130px;top:-80px"></div>
                         <span class="Kategorie"> (Shopping) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
                         <span class="name">Daimaru Fukuoka Tenjin</span>
                         <span class="content"></span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Shofuen" data-lat="33.58920061489103" data-lng="130.40151612264768">
                         <div class="cityimage"><img class="cityimg" src="img/Shofuen.jpeg" alt="Shofuen" style="max-height: 100%;left:-50px;"></div>
                         <span class="Kategorie"> (Land mark) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
@@ -142,7 +147,7 @@
                             I recommend blooming April and November of autumn leaves.
                         </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Fukuoka_Castle_Ruins" data-lat="33.588248249859554" data-lng="130.38295840699416">
                         <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Castle_Ruins.jpeg" alt="Fukuoka Castle Ruins" style="left: -60px;top:-100px;"></div>
                         <span class="Kategorie"> (Historic Site) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
@@ -151,7 +156,7 @@
                             You can see the city view and part of remained city walls.
                         </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Fukuoka_Art_Museum" data-lat="33.58495261530126" data-lng="130.37965749659313">
                         <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Art_Museum.jpeg" alt="Fukuoka Art Museum" style="top:-40px;max-width: 100%;left:0px"></div>
                         <span class="Kategorie"> (Museum) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
@@ -159,7 +164,7 @@
                         <span class="content">You can see various exhibits of Asia and other parts of the world.<br/>(Mondays, Holidays Off)
                         </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="ohori_park" data-lat="33.58732588616239" data-lng="130.3762558533364">
                         <div class="cityimage"><img class="cityimg" src="img/ohori_park.jpeg" alt="Ohori Park" style="max-height: 100%;left: -46px;"></div>
                         <span class="Kategorie"> (Park) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
@@ -169,7 +174,7 @@
                     </button>
                 </div>
                 <div id="city3" class="hidden">
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Canal_City_Hakata" data-lat="33.59039441107723" data-lng="130.4111374413325">
                         <div class="cityimage"><img class="cityimg" src="img/Canal_City_Hakata.jpeg" alt="Canel City Hakata" style="max-height: 100%;"></div>
                         <span class="Kategorie"> (Land Mark) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
@@ -179,7 +184,7 @@
                             11:30/12:15/12:45/13:30/14:30/15:30/17:30
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Rakusuien" data-lat="33.587614087283505" data-lng="130.41335573676466">
                         <div class="cityimage"><img class="cityimg" src="img/Rakusuien.jpeg" alt="Rakusuien" style="max-height: 100%;"></div>
                         <span class="Kategorie"> (Land Mark) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
@@ -187,7 +192,7 @@
                         <span class="content">It is a small Japanese-style garden in the center of Fukuoka with traditional tea houses, ponds, and trails.
                         </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Asahi_Brewery_Hakata" data-lat="33.57108524337481" data-lng="130.43091915137157">
                         <div class="cityimage"><img class="cityimg" src="img/Asahi_Brewery_Hakata.jpeg" alt="Asahi Brewery Hakata" style="max-height: 100%;left:-35px"></div>
                         <span class="Kategorie"> (experience) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.5</span>
@@ -196,7 +201,7 @@
                             Reservations are required on the website because you cannot register on the same day.
                             09:30 – 15:00
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Kushida_Jinja" data-lat="33.593446284427806" data-lng="130.4104813938091">
                         <div class="cityimage"><img class="cityimg" src="img/Kushida_Jinja.jpeg" altKushida Jinja style="max-height: 100%;left: -50px;"></div>
                         <span class="Kategorie"> (Holy Land) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
@@ -206,7 +211,7 @@
                             Yamakasa : July
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Hakata_Traditional_Craft_and_Design_Museum" data-lat="33.589711589299434" data-lng="130.35389073789838">
                         <div class="cityimage"><img class="cityimg" src="img/Hakata_Traditional_Craft_and_Design_Museum.jpeg" alt="Hakata Traditional Craft and Design Museum" style="max-height: 100%;"></div>
                         <span class="Kategorie"> (Museum) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
@@ -219,23 +224,22 @@
                     </button>
                 </div>
                 <div id="city4" class="hidden">
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Nokonoshima_Island" data-lat="33.589711589299434" data-lng="130.35389073789838">
                         <div class="cityimage"><img class="cityimg" src="img/Nokonoshima_Island.jpeg" alt="Nokonoshima Island" style="max-height: 100%;left:-50px"></div>
                         <span class="Kategorie"> (Natural) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
                         <span class="name"style="font-size:25px">Nokonoshima Island</span>
                         <span class="content" >A well-groomed island.
-
                             Recommended use of Fukuoka City Pass</span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Mariano_City_Fukuoka" data-lat="33.594602758785136" data-lng="130.35131717655528"> 
                         <div class="cityimage"><img class="cityimg" src="img/Mariano_City_Fukuoka.jpeg" alt="Mariano City Fukuoka" style="max-width: 140%;left:-10;top:-110px;"></div>
                         <span class="Kategorie"> (Natural) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
                         <span class="name">Genkai Island</span>
                         <span class="content">A good island for a walk.</span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Genkai_Island" data-lat="33.59525080496118" data-lng="130.3226245670798">
                         <div class="cityimage"><img class="cityimg" src="img/Genkai_Island.jpeg" alt="Genkai Island" style="max-height: 100%;left:0"></div>
                         <span class="Kategorie"> (Shopping) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
@@ -248,21 +252,21 @@
                     </button>
                 </div>
                 <div id="city5" class="hidden">
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Katsuma_Beach" data-lat="33.68850699326655" data-lng="130.2944151282119">
                         <div class="cityimage"><img class="cityimg" src="img/Katsuma_Beach.jpeg" alt="Katsuma Beach" style="max-height: 100%;left:-130px"></div>
                         <span class="Kategorie"> (Natural) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
                         <span class="name">Katsuma Beach</span>
                         <span class="content">Open 24 hours a day.</span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Shika_Island" data-lat="33.672252178049966" data-lng="130.30278390406693">
                         <div class="cityimage"><img class="cityimg" src="img/Shika_Island.jpeg" alt="Shika Island" style="max-width: 100%;left:0"></div>
                         <span class="Kategorie"> (Park) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
                         <span class="name">Shika Island Park</span>
                         <span class="content">It's good to drive along the ocean.</span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Marine_World_Uminonakamichi" data-lat="33.61587482488387" data-lng="130.35123613868046">
                         <div class="cityimage"><img class="cityimg" src="img/Marine_World_Uminonakamichi.png" alt="Marine World" style="max-height: 100%;left: 0;"></div>
                         <span class="Kategorie"> (Aquarium) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
@@ -273,7 +277,7 @@
                             10:00 – 17:00
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Hakozaki_Shrine" data-lat="33.61587482488387" data-lng="130.42336174312155">
                         <div class="cityimage"><img class="cityimg" src="img/Hakozaki_Shrine.png" alt="Hakozaki Shrine" style="max-height: 100%;"></div>
                         <span class="Kategorie"> (Historic Site) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
@@ -288,7 +292,7 @@
             </aside>
             <aside>
                 <div id="city1Food" >
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="THE_BEACH" data-lat="33.596406742522944" data-lng="130.35123613868046">
                         <div class="cityimage"><img src="img/THE_BEACH.png" alt="THE_BEACH" style="height: 100%;position: absolute;left:-50px;"></div>
                         <span class="Kategorie"> (Cafe) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
@@ -299,7 +303,7 @@
                             092-845-6636
                             </span>
                         </button>
-                        <button class="city_content_wrap">
+                        <button class="city_content_wrap" id="Genkotsu" data-lat="33.54420480469999" data-lng="130.35131717655528">
                             <div class="cityimage"><img src="img/Genkotsu1.png" alt="Genkotsu"style="height: 100%;position: absolute;left:-50px;"></div>
                             <span class="Kategorie"> (Ramen) </span>
                             <span class="grade"><i class="fa-solid fa-star"></i> 3.6</span>
@@ -310,7 +314,7 @@
                         </button>
                     </div>
                 <div id="city2Food" class="hidden">
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Abura_Soba_Nanairo" data-lat="33.591949117660164" data-lng="130.39211100087485">
                         <div class="cityimage"><img src="img/Abura_Soba_Nanairo.png" alt="Abura_Soba_Nanairo" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Ramen) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
@@ -321,7 +325,7 @@
                             092-781-7311
                         </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Ippudo_Daimyo_Branch" data-lat="33.588035175700924" data-lng="130.39592980184955">
                         <div class="cityimage"><img src="img/Ippudo_Daimyo_Branch.png" alt="Ippudo_Daimyo_Branch" style="height: 100%;position: absolute;left: -30px;"></div>
                         <span class="Kategorie"> (Ramen) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
@@ -329,7 +333,7 @@
                         <span class="content">The original Shiromaru Motoaji Ramen and Akamaru Shin-Aji Ramen, which adds a spicy smile and deep taste, is popular.
                         </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Kiwamiya_Fukuoka_Parco_Store" data-lat="33.591511991289984" data-lng="130.39894071123445">
                         <div class="cityimage"><img src="img/Kiwamiya_Fukuoka_Parco_Store2.png" alt="Kiwamiya_Fukuoka_Parco_Store"style="height: 100%;position: absolute;left: -70px;"></div>
                         <span class="Kategorie"> (Meat Dish) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
@@ -338,7 +342,7 @@
                             A system where meat is removed little by little and grilled on a heated stone.
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Chikae_Fukuoka" data-lat="33.58816361230223" data-lng="130.39180311236726">
                         <div class="cityimage"><img src="img/Chikae_Fukuoka.png" alt="Chikae_Fukuoka" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Seafood) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
@@ -350,7 +354,7 @@
                             There is a weekend lunch limited menu.
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Robata_Sankobashi" data-lat="33.58918407238225" data-lng="130.404927767104">
                         <div class="cityimage"><img src="img/Robata_Sankobashi.png" alt="Robata_Sankobashi" style="width: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Seafood) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.6</span>
@@ -362,7 +366,7 @@
                             It's always better to make a reservation because there are no seats available.                            
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Makoto" data-lat="33.59296771815088" data-lng="130.40206489269454">
                         <div class="cityimage"><img src="img/Makoto.png" alt="Makoto" style="width: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Teishoku) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
@@ -374,7 +378,7 @@
                         092-712-0201
                         </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Gyukatsu_Motomura" data-lat="33.58778921593677" data-lng="130.39628862702685">
                         <div class="cityimage"><img src="img/Gyukatsu_Motomura.png" alt="Gyukatsu_Motomura" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Meat Dish ) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.7</span>
@@ -383,7 +387,7 @@
                             You can grill it on a heated stone plate as you like.
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Tempura_Hirao" data-lat="33.589369999342566" data-lng="130.394309626863">
                         <div class="cityimage"><img src="img/Tempura_Hirao.png" alt="Tempura_Hirao" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Ramen) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
@@ -393,7 +397,7 @@
                             a cost-effective fried food restaurant.
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Genso_Hakata_Mentaiju" data-lat="33.59175106178762" data-lng="130.40398300410655">
                         <div class="cityimage"><img src="img/Genso_Hakata_Mentaiju.png" alt="Genso_Hakata_Mentaiju" style="width: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Japanese) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
@@ -405,7 +409,7 @@
                     </button>
                 </div>
                 <div id="city3Food" class="hidden">
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Yayoiken" data-lat="33.59681923328703" data-lng="130.4133806069942">
                         <div class="cityimage"><img src="img/Yayoiken.png" alt="Yayoiken" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Teishoku) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.7</span>
@@ -416,7 +420,7 @@
                             There is no separate Korean menu.                            
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Izakaya_Sea_Food" data-lat="33.59109961654247" data-lng="130.4228219824712">
                         <div class="cityimage"><img src="img/Izakaya_Sea_Food.png" alt="Izakaya_Sea_Food" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Izakaya) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.8</span>
@@ -426,7 +430,7 @@
                             cost-effective restaurant of 500 yen sashimi.
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Ichiran" data-lat="33.59696221884625" data-lng="130.4042825542618">
                         <div class="cityimage"><img src="img/Ichiran.png" alt="Ichiran" style="height: 100%;position: absolute;left: -30px;"></div>
                         <span class="Kategorie"> (Ramen) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
@@ -434,7 +438,7 @@
                         <span class="content">Its characteristic is that you can choose ingredients such as taste, oiliness, garlic, green onion, char siu, sauce, and noodles according to your taste.
                         </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Oyama" data-lat="33.59714403345643" data-lng="130.40967271605783">
                         <div class="cityimage"><img src="img/Oyama.png" alt="Oyama" style="height: 100%;position: absolute;left: -30px;"></div>
                         <span class="Kategorie"> (Offal pot) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
@@ -445,7 +449,7 @@
                             You can also order one serving.
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Torimabushi" data-lat="33.59376127111868" data-lng="130.40440655767128">
                         <div class="cityimage"><img src="img/Torimabushi.png" alt="Torimabushi" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Izakaya) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
@@ -455,7 +459,7 @@
                             a classic restaurant featuring local specialties and sake.
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Mishima" data-lat="33.58752263932729" data-lng="130.41532788692305">
                         <div class="cityimage"><img src="img/Mishima.png" alt="Mishima" style="width: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Teishoku) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
@@ -464,7 +468,7 @@
                             (Breaktime 14:00-17:00, Weekend Off)
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Tetpangaya" data-lat="33.58784726693427" data-lng="130.41381208626584">
                         <div class="cityimage"><img src="img/Tetpangaya.png" alt="Tetpangaya" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Okonomiyaki) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
@@ -476,7 +480,7 @@
                             One drink per person.
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Nikuichi" data-lat="33.58754100811842" data-lng="130.42141364561652">
                         <div class="cityimage"><img src="img/Nikuichi.png" alt="Nikuichi" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Yakiniku) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
@@ -488,7 +492,7 @@
                     </button>
                 </div>
                 <div id="city4Food" class="hidden">
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Pomunoki_Marinoashitifukuokaten" data-lat="33.595775131915346" data-lng="130.32293004638825">
                         <div class="cityimage"><img src="img/Pomunoki_Marinoashitifukuokaten.png" alt="Pomunoki_Marinoashitifukuokaten" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Western) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
@@ -500,7 +504,7 @@
                     </button>
                 </div>
                 <div id="city5Food" class="hidden">
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="moku" data-lat="33.61919278098524" data-lng="130.42315879736068">
                         <div class="cityimage"><img src="img/moku.png" alt="杢moku" style="height: 100%;position: absolute;left: -30px;"></div>
                         <span class="Kategorie"> (Italian) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
@@ -511,7 +515,7 @@
                             11:30 – 22:00
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Ginger_Bakeshop" data-lat="33.62116083884242" data-lng="130.4247758302127">
                         <div class="cityimage"><img src="img/Ginger_Bakeshop.png" alt="Ginger_Bakeshop" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Dessert) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
@@ -522,7 +526,7 @@
                             12:00 – 19:00
                             </span>
                     </button>
-                    <button class="city_content_wrap">
+                    <button class="city_content_wrap" id="Nagata_Bakery_Hakozaki" data-lat="33.61498148034785" data-lng="130.42185506516026">
                         <div class="cityimage"><img src="img/Nagata_Bakery_Hakozaki.png" alt="Nagata_Bakery_Hakozaki" style="height: 100%;position: absolute;"></div>
                         <span class="Kategorie"> (Bakery) </span>
                         <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
@@ -537,15 +541,23 @@
             </aside>
         </div>
         <button id="routeBtn">Route Search</button>
-        <div id="route" class="hidden">
-            <div id="route_map">
-
+        <div id="mapBody" class="hidden">
+            <div id="mapContainer">
+                <div id="map"></div>
+                <div id="sidebar">
+                    <p>Total Distance: <span id="total"></span></p>
+                    <div id="panel"></div>
+                </div>
             </div>
         </div>
-        <footer></footer>
-    </div>   
-    <script src="main.js"></script>
-    <script src="weather.js"></script>
+    </div>
+</div>   
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/data.js"></script>
     <script src="https://kit.fontawesome.com/f4a340c9f0.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeJnz6-4O7-TcqXuXyDQhuyQTWIq_AKoU&callback=hayoung"></script>
 </body>
 </html>

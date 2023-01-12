@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Fined</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="wrap">
+        <a href="index.html" id="transrationBtn">Engilsh</a>
+        <header>
+            <div id="header">
+                <img id="logo" src="img/logo.png" alt="logo1">
+                <div id="explanation">
+                    <ul>
+                        <span id="cheak">✔</span > <span class=under_bar >후쿠오카의 관광지를 한눈에 확인하세요! <br/></span> 
+                    </ul> 
+                    <ul>
+                        <span id="cheak">✔</span ><span class=under_bar >원하는 지역을 고르고 최적의 경로와 비용을 찾으세요!</span> 
+                    </ul>
+                    <div id="mouseHere">마우스 <br/>여기에</div>
+                    <div id="weather">
+                        <span class="weather"></span>
+                        <span class="weather"></span>
+                        <div id="air_pollution">
+                            <a>후쿠오카의 현재 AQI</a>
+                            <a class="aqi"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <button id="firstCity" class="clicked">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase fa-suitcase_clicked"></i>
+                </div>
+                사와라
+            </button>
+            <button id="secondCity">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase"></i>
+                </div>
+                주오
+            </button>    
+            <button id="thirdCity">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase"></i>
+                </div>
+                하카타 
+            </button>
+            <button id="fourthCity">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase"></i>
+                </div>
+                니시
+            </button>
+            <button id="fifthCity">
+                <div class="">
+                    <i class=" fa-solid fa-suitcase"></i>
+                </div>
+                히가시
+                </button>
+            </nav>
+            <div id="list">
+                <aside>
+                    <div id="city1">
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Momochi_Seaside_Park.jpeg" alt="Momochi Seaside Park" style="max-height: 100%;"></div>
+                            <span class="Kategorie"> (공원) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
+                            <span class="name">모모치 해변 공원</span>
+                            <span class="content">인공섬을 따라 길게 뻗은 인공 해변.
+                                <br/>애완견 가능
+                                <br/>휠체어 가능
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Tower.jpeg" alt="Fukuoka Tower" style="max-height: 100%;"></div>
+                            <span class="Kategorie"> (랜드마크) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                            <span class="name">후쿠오카 타워</span>
+                            <span class="content">마천루 및 아름다운 전망대
+                                JP¥800(공식 사이트)                                
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Fukuoka_city_Museum.jpeg" alt="Fukuoka city Museum" style="left: -50px;max-height: 100%;"></div>
+                            <span class="Kategorie"> (전시관) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                            <span class="name">후쿠오카 시 박물관</span>
+                            <span class="content">후쿠오카의 역사 전시를 관람할 수 있는 현대적인 박물관
+                                JP¥200(공식 사이트)                                
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Karanno_Falls.jpeg" alt="Karanno Falls" style="top: -300px;left: -100px;"></div>
+                            <span class="Kategorie"> (자연) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="name">화란 폭포</span>
+                            <span class="content">풍경이 아름다운 폭포.
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Bozugataki_Falls.jpeg" alt="Bozugataki Falls" style="max-height: 100%;left: -50px;"></div>
+                            <span class="Kategorie"> (자연) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                            <span class="name">보즈가타키 폭포</span>
+                            <span class="content">풍경이 아름다운 폭포.
+                            </span>
+                        </button>
+                    </div>
+                    <div id="city2" class="hidden">
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Open_Top_Bus .jpeg" alt="Fukuoka Open Top Bus" style="top:-60px;left:-100px"></div>
+                            <span class="Kategorie"> (체험) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                            <span class="name">Fukuoka Open Top Bus</span>
+                            <span class="content">후쿠오카 시내 관광 명소들을 즐길 수 있습니다.
+                                후쿠오카시 관공서 내 승차권 카운터
+                            </span>
+                        </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Daimaru_Fukuoka_Tenjin.jpeg" alt="Daimaru Fukuoka Tenjin" style="left:-130px;top:-80px"></div>
+                        <span class="Kategorie"> (쇼핑몰) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">다이마루 백화점 텐진</span>
+                        <span class="content"></span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Shofuen.jpeg" alt="Shofuen" style="max-height: 100%;left:-50px;"></div>
+                        <span class="Kategorie"> (랜드마크) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">쇼후엔</span>
+                        <span class="content">아름다운 일본의 건축물.
+                            꽃피는 4월, 단풍의 11월을 추천합니다.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Castle_Ruins.jpeg" alt="Fukuoka Castle Ruins" style="left: -60px;top:-100px;"></div>
+                        <span class="Kategorie"> (종교 성지) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
+                        <span class="name">후쿠오카 성터</span>
+                        <span class="content">1600년대의 유서 깊은 성터로 도시의 전망과 남아 있는 성벽의 일부를 볼 수 있습니다.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Fukuoka_Art_Museum.jpeg" alt="Fukuoka Art Museum" style="top:-40px;max-width: 100%;left:0px"></div>
+                        <span class="Kategorie"> (전시관) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">후쿠오카 미술관</span>
+                        <span class="content">아시아를 비롯한 각지의 다양한 전시품을 만날 수 있습니다.<br/>(월요일, 공휴일 휴무)
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/ohori_park.jpeg" alt="Ohori Park" style="max-height: 100%;left: -46px;"></div>
+                        <span class="Kategorie"> (공원) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">오호리 공원</span>
+                        <span class="content">대형 호수, 호숫가 운동 코스, 보트 대여, 커피숍을 갖춘 도심 공원입니다.
+                        </span>
+                    </button>
+                </div>
+                <div id="city3" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Canal_City_Hakata.jpeg" alt="Canel City Hakata" style="max-height: 100%;"></div>
+                        <span class="Kategorie"> (랜드마크) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">카날시티</span>
+                        <span class="content">대형 쇼핑몰.
+                            · 분수 쇼
+                            11:30/12:15/12:45/13:30/14:30/15:30/17:30
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Rakusuien.jpeg" alt="Rakusuien" style="max-height: 100%;"></div>
+                        <span class="Kategorie"> (랜드 마크) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">라쿠스이엔</span>
+                        <span class="content">후쿠오카 중심부에 있는 작은 일본식 정원으로 전통 찻집, 연못, 오솔길이 있습니다.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Asahi_Brewery_Hakata.jpeg" alt="Asahi Brewery Hakata" style="max-height: 100%;left:-35px"></div>
+                        <span class="Kategorie"> (체험) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.5</span>
+                        <span class="name">아사히 맥주 하카타 공장</span>
+                        <span class="content">무료 시음, 견학이 가능한 맥주 공장
+                            당일 접수는 안되니 사이트에서 예약 필수
+                            .
+                            09:30 – 15:00
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Kushida_Jinja.jpeg" altKushida Jinja style="max-height: 100%;left: -50px;"></div>
+                        <span class="Kategorie"> (종교 성지) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">구시다 신사</span>
+                        <span class="content">서기 757년에 건설. 
+                            매년 지역 최대의 축제인 하카타 기온 야마카사가 열립니다.
+                            야마카사 : 7월
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Hakata_Traditional_Craft_and_Design_Museum.jpeg" alt="Hakata Traditional Craft and Design Museum" style="max-height: 100%;"></div>
+                        <span class="Kategorie"> (전시관) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">하카타 전통 공예관</span>
+                        <span class="content" style="margin-top: 24px;">현지 역사를 보여주는 전시품, 공예품, 직조물, 종교 축제 모형 등이 전시된 전통 주택.
+
+                            무료
+                            </span>
+                    </button>
+                </div>
+                <div id="city4" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Nokonoshima_Island.jpeg" alt="Nokonoshima Island" style="max-height: 100%;left:-50px"></div>
+                        <span class="Kategorie"> (자연) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name"style="font-size:25px">노코노시마</span>
+                        <span class="content" >잘 가꿔진 섬.
+
+                            후쿠오카 시티패스 이용을 추천</span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Mariano_City_Fukuoka.jpeg" alt="Mariano City Fukuoka" style="max-width: 140%;left:-10;top:-110px;"></div>
+                        <span class="Kategorie"> (자연) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">겐카이 섬</span>
+                        <span class="content">산책하기 좋은 섬.</span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Genkai_Island.jpeg" alt="Genkai Island" style="max-height: 100%;left:0"></div>
+                        <span class="Kategorie"> (쇼핑몰) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">마리노아시티</span>
+                        <span class="content">아웃렛 상점과 캐주얼한 레스토랑이 입점해 있고 다양한 활동을 즐길 수 있는 대형 쇼핑 단지.
+                            
+                            10:00 – 20:00
+                            </span>
+                    </button>
+                </div>
+                <div id="city5" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Katsuma_Beach.jpeg" alt="Katsuma Beach" style="max-height: 100%;left:-130px"></div>
+                        <span class="Kategorie"> (자연) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">카츠마 해변</span>
+                        <span class="content">24시간 영업.</span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Shika_Island.jpeg" alt="Shika Island" style="max-width: 100%;left:0"></div>
+                        <span class="Kategorie"> (공원) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">시카 섬</span>
+                        <span class="content">드라이브 하기 좋은 섬.</span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Marine_World_Uminonakamichi.png" alt="Marine World" style="max-height: 100%;left: 0;"></div>
+                        <span class="Kategorie"> (수족관) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">Marine World</span>
+                        <span class="content">다양한 해양생물을 볼 수 있는 도심 수족관. 돌고래와 바다사자 쇼가 펼쳐지는 공연장이 있습니다.
+
+                            입장료 ￥2,500
+                            10:00 – 17:00
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img class="cityimg" src="img/Hakozaki_Shrine.png" alt="Hakozaki Shrine" style="max-height: 100%;"></div>
+                        <span class="Kategorie"> (유적지) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">하코자키 궁</span>
+                        <span class="content">대표적 유물이 있고 전통 이벤트가 열리는 유서 깊은 신사.
+                            9월에 하카타 3대 축제인 호조야가 열립니다.
+                            
+                            06:00– 19:00
+                            </span>
+                    </button>
+                </div>
+            </aside>
+            <aside>
+                <div id="city1Food" >
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/THE_BEACH.png" alt="THE_BEACH" style="height: 100%;position: absolute;left:-50px;"></div>
+                        <span class="Kategorie"> (카페) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
+                        <span class="name">THE BEACH</span>
+                        <span class="content">평일 10:30 – 18:00 
+                            (주말 휴일)
+                            주말 11:00 – 19:00
+                            092-845-6636
+                            </span>
+                        </button>
+                        <button class="city_content_wrap">
+                            <div class="cityimage"><img src="img/Genkotsu1.png" alt="Genkotsu"style="height: 100%;position: absolute;left:-50px;"></div>
+                            <span class="Kategorie"> (라멘) </span>
+                            <span class="grade"><i class="fa-solid fa-star"></i> 3.6</span>
+                            <span class="name">Genkotsu</span>
+                            <span class="content">11:00 – 22:00
+                                092-874-1396
+                                </span>
+                        </button>
+                    </div>
+                <div id="city2Food" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Abura_Soba_Nanairo.png" alt="Abura_Soba_Nanairo" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (라멘) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">아부라 소바 나나이로</span>
+                        <span class="content">11:45 – 20:45
+                            (휴식 13:46-17:00, 
+                            일요일 휴무)
+                            092-781-7311
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Ippudo_Daimyo_Branch.png" alt="Ippudo_Daimyo_Branch" style="height: 100%;position: absolute;left: -30px;"></div>
+                        <span class="Kategorie"> (라멘) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">잇푸도 다이묘 본점</span>
+                        <span class="content">오리지날의 시로마루 모토아지 라멘과 매운미소를 더해 깊은 맛을 내는 아카마루 신아지 라멘이 인기.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Kiwamiya_Fukuoka_Parco_Store2.png" alt="Kiwamiya_Fukuoka_Parco_Store"style="height: 100%;position: absolute;left: -70px;"></div>
+                        <span class="Kategorie"> (고기) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">키와비야 함바그</span>
+                        <span class="content">밥과 샐러드, 된장국, 아이스크림이 세트로 나오며, 고기를 조금씩 떼어내 달궈진 돌에 구워 먹는 시스템.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Chikae_Fukuoka.png" alt="Chikae_Fukuoka" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (해산물) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">치카에</span>
+                        <span class="content">평일 17:00 – 21:00
+                            주말 11:30 – 21:00 
+                                (휴식 14:00-17:00)
+                                여러 개의 대형 수조에서 바로 잡아 신선한 횟감
+                                주말 점심 한정 메뉴가 있다.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Robata_Sankobashi.png" alt="Robata_Sankobashi" style="width: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (해산물) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.6</span>
+                        <span class="name">로바타 산코바시</span>
+                        <span class="content">
+                            17:00 – 00:30
+                            092-712-7373
+                            로바다야끼 전문점.
+                            늘 자리가 없는 편이라 예약하고 가는 것이 좋다.                            
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Makoto.png" alt="Makoto" style="width: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (일정식) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.4</span>
+                        <span class="name">마코토</span>
+                        <span class="content">평일 11:00 – 22:00
+                            (휴식 13:30-18:00)
+                         주말 11:00 – 01:30
+                            (일요일 휴무)
+                        092-712-0201
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Gyukatsu_Motomura.png" alt="Gyukatsu_Motomura" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (고기) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.7</span>
+                        <span class="name">모토무라 규카츠</span>
+                        <span class="content">11:00 - 22:00
+                            달궈진 돌판에 취향껏 구워 먹을 수 있다.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Tempura_Hirao.png" alt="Tempura_Hirao" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (라멘) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">텐푸라 히라오</span>
+                        <span class="content">10:30 – 19:30 (화요일 휴무)
+                            092-752-7900
+                            가성비 좋은 튀김 맛집.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Genso_Hakata_Mentaiju.png" alt="Genso_Hakata_Mentaiju" style="width: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (일식) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">원조 하카타 멘타이쥬</span>
+                        <span class="content">07:00 – 22:30
+                            092-725-7220
+                            현지인들도 많이 찾는 명란젓과 츠케멘집.
+                            </span>
+                    </button>
+                </div>
+                <div id="city3Food" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Yayoiken.png" alt="Yayoiken" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (일정식) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.7</span>
+                        <span class="name">야요이켄</span>
+                        <span class="content">10:00 – 02:30
+                            092-263-8805
+                            정식 또는 단품으로 선택 가능. 한국어 메뉴판이 없습니다.                            
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Izakaya_Sea_Food.png" alt="Izakaya_Sea_Food" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (이자카야) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.8</span>
+                        <span class="name">시후도</span>
+                        <span class="content">17:00 – 00:00
+                            092-433-4210
+                            500엔 사시미의 가성비 맛집.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Ichiran.png" alt="Ichiran" style="height: 100%;position: absolute;left: -30px;"></div>
+                        <span class="Kategorie"> (라멘) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">이치란 본점</span>
+                        <span class="content">맛, 기름진 정도, 마늘, 파, 차슈, 소스, 면 등의 재료를 입맛대로 고를 수 있는 것이 특징.
+                        </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Oyama.png" alt="Oyama" style="height: 100%;position: absolute;left: -30px;"></div>
+                        <span class="Kategorie"> (내장 요리) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.2</span>
+                        <span class="name">하카타모츠나베오오야마 본점</span>
+                        <span class="content">16:00 – 23:00
+                            092-2626-8136
+                            고소하고 진한 국물 맛이 일품.
+                            1인분도 주문 가능.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Torimabushi.png" alt="Torimabushi" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (이자카야) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">토리마부시</span>
+                        <span class="content">10:30 – 22:00
+                            092-260-7273
+                            현지 특선 요리와 사케를 선보이는 클래식한 식당.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Mishima.png" alt="Mishima" style="width: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (일정식) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">미시마</span>
+                        <span class="content">11:30 – 22:00 
+                            (휴식 14:00-17:00, 주말 휴무)
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Tetpangaya.png" alt="Tetpangaya" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (오코노미야끼) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">텟판야끼</span>
+                        <span class="content">11:30 – 22:30
+                            (휴식 14:00-18:00, 
+                            일요일 휴무)
+                            현지인들이 많이 방문하는 맛집.
+                            1인 1음료.
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Nikuichi.png" alt="Nikuichi" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (고기)) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.1</span>
+                        <span class="name">니쿠이치</span>
+                        <span class="content">16:00 – 00:00
+                            092-472-1129
+                            숯불에 구운 소고기를 주류 무제한옵션으로 즐길 수 있는 식당.
+                            </span>
+                    </button>
+                </div>
+                <div id="city4Food" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Pomunoki_Marinoashitifukuokaten.png" alt="Pomunoki_Marinoashitifukuokaten" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (양식) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 3.9</span>
+                        <span class="name">포무노키</span>
+                        <span class="content">11:00 – 21:00
+                            092-892-8645
+                            다양한 오므라이스를 먹을 수 있는 곳.
+                            </span>
+                    </button>
+                </div>
+                <div id="city5Food" class="hidden">
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/moku.png" alt="杢moku" style="height: 100%;position: absolute;left: -30px;"></div>
+                        <span class="Kategorie"> (이탈리아 음식점) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.0</span>
+                        <span class="name">杢moku</span>
+                        <span class="content">고민가를 개조.
+                            하코자키 상점가에 위치.
+                            TEL : 09-3611-9506
+                            11:30 – 22:00
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Ginger_Bakeshop.png" alt="Ginger_Bakeshop" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (디저트) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">Ginger Bakeshop</span>
+                        <span class="content">미국 스타일의 케이크 & 쿠키.
+                            오래된 빌딩의 공간을 리노베이션.
+                            TEL : 092-775-8235
+                            12:00 – 19:00
+                            </span>
+                    </button>
+                    <button class="city_content_wrap">
+                        <div class="cityimage"><img src="img/Nagata_Bakery_Hakozaki.png" alt="Nagata_Bakery_Hakozaki" style="height: 100%;position: absolute;"></div>
+                        <span class="Kategorie"> (베이커리) </span>
+                        <span class="grade"><i class="fa-solid fa-star"></i> 4.3</span>
+                        <span class="name">나가타빵 하코자키점</span>
+                        <span class="content">연유빵으로 유명한 빵집
+                            08:00 – 19:00 
+                            (화요일, 목요일 휴무)
+                            092-643-8680
+                            </span>
+                    </button>
+                </div>
+            </aside>
+        </div>
+        <button id="routeBtn">경로 검색</button>
+        <div id="mapBody2" class="hidden">
+            <div id="mapContainer">
+                <div id="map"></div>
+                <div id="sidebar">
+                    <p>Total Distance: <span id="total"></span></p>
+                <div id="panel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>   
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/api.js"></script>
+    <script src="https://kit.fontawesome.com/f4a340c9f0.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeJnz6-4O7-TcqXuXyDQhuyQTWIq_AKoU&callback=hayoung"></script>
+</body>
+</html>
